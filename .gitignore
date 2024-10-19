@@ -1,0 +1,27 @@
+# Entornos virtuales
+venv/
+env/
+
+# Archivos de configuración del sistema
+*.py[cod]
+__pycache__/
+
+# Archivos de configuración de IDEs
+.vscode/
+.idea/
+
+# Archivos de bases de datos locales
+db.sqlite3
+
+# Archivos de logs
+*.log
+
+# Archivos de configuración local y claves secretas
+.env
+
+# Archivos de migraciones (opcional, si prefieres no incluirlos)
+*/migrations/*.py
+!*/migrations/__init__.py
+
+# Archivos de medios subidos por los usuarios (si los tienes configurados)
+media/
