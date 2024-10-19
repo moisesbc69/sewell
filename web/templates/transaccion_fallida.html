@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transacción Fallida</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>¡Transacción Fallida!</h1>
+        <p>Lo sentimos, tu transacción no pudo completarse.</p>
+        <ul>
+            <li><strong>Orden de Compra:</strong> {{ response.buy_order }}</li>
+            <li><strong>Estado:</strong> {{ response.status }}</li>
+            <li><strong>Monto:</strong> ${{ response.amount }}</li>
+            <li><strong>Mensaje de Error:</strong> {{ response.status }}</li>
+        </ul>
+        <a href="{% url 'home' %}" class="btn btn-primary">Intentar Nuevamente</a>
+    </div>
+</body>
+</html>
+

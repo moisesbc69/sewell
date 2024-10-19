@@ -1,0 +1,674 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Panola - Hotel HTML Template Preview</title>
+
+<!-- Stylesheets -->
+<link href="{% static 'css/style.css' %}" rel="stylesheet">
+<link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+<link rel="icon" href="images/favicon.ico' %}" type="image/x-icon">
+<!-- jQuery UI CSS -->
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!-- FullCalendar CSS -->
+<link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css" rel="stylesheet" />
+
+
+<!-- style views --->
+<style>
+
+
+
+
+</style>
+
+</head>
+
+<!-- page wrapper -->
+<body class="boxed_wrapper">
+
+
+    <!-- .preloader -->
+    <div class="preloader"></div>
+    <!-- /.preloader -->
+
+
+    <!-- Main Header -->
+    <header class="main-header header-style-two">
+        <div class="container">
+            <!-- header-top -->
+            <div class="header-top clearfix">
+                <div class="left-content">
+                    <ul class="content-box">
+                        <li><a href="#"><i class="fa fa-envelope"></i>Support@example.com</a></li>
+                        <li><a href="#"><i class="fa fa-globe"></i>Kleine Pierboulevard 8-6 2249 KV Vries</a></li>
+                    </ul>
+                </div>
+                <div class="right-content">
+                    <ul class="social-box">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+            </div><!-- header-top end -->
+        </div>
+        
+        <!-- header-bottom -->
+        <div class="header-bottom">
+            <div class="container clearfix">
+                <figure class="logo-box"><a href="index.html"><img src="{% static 'images/logo2.png' %}" alt=""></a></figure>
+                <div class="menu-area">
+                    <nav class="main-menu navbar-expand-lg">
+                        <div class="navbar-header">
+                            <!-- Toggle Button -->      
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="navbar-collapse collapse clearfix">
+                            <ul class="navigation clearfix">
+                                <li class="dropdown"><a href="#">Home</a>
+                                    <ul>
+                                        <li><a href="index.html">Home Page One</a></li>
+                                        <li><a href="index1.html">Home Page Two</a></li>
+                                    </ul>
+                                </li>
+                                <li class="current dropdown"><a href="#">Rooms</a>
+                                    <ul>
+                                        <li><a href="room-grid.html">Rooms Grid View</a></li>
+                                        <li><a href="room-list.html">Rooms List View</a></li>
+                                        <li><a href="room-details.html">Room Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li class="dropdown"><a href="#">Pages</a>
+                                    <ul>
+                                        <li><a href="gallery.html">Our Gallery</a></li>
+                                        <li><a href="our-place.html">Our Places</a></li>
+                                        <li><a href="place-details.html">Place Details</a></li>
+                                        <li><a href="service.html">Our Services</a></li>
+                                        <li><a href="resturent.html">Resturent</a></li>
+                                        <li><a href="spa.html">Our Spa</a></li>
+                                        <li><a href="testimonial.html">Testimonials</a></li>
+                                        <li><a href="offer.html">Special Offers</a></li>
+                                        <li><a href="staff.html">Our Staffs</a></li>
+                                        <li><a href="error.html">404 Page</a></li>
+                                    </ul>
+                                </li>  
+                                <li class="dropdown"><a href="#">News</a>
+                                    <ul>
+                                        <li><a href="our-blog.html">Our Blog</a></li>
+                                        <li><a href="blog-details.html">Blog Details</a></li>
+                                    </ul>
+                                </li>                              
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="link"><a href="#" class="theme-btn">Book Now</a></div>
+                </div>
+            </div><!-- header-bottom end -->
+        </div>
+
+
+        <!--Sticky Header-->
+        <div class="sticky-header">
+            <div class="container clearfix">
+                <figure class="logo-box"><a href="index.html"><img src="{% static 'images/small-logo.png' %}" alt=""></a></figure>
+                <div class="menu-area">
+                    <nav class="main-menu navbar-expand-lg">
+                        <div class="navbar-header">
+                            <!-- Toggle Button -->      
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="navbar-collapse collapse clearfix">
+                            <ul class="navigation clearfix">
+                                <li class="dropdown"><a href="#">Home</a>
+                                    <ul>
+                                        <li><a href="index.html">Home Page One</a></li>
+                                        <li><a href="index1.html">Home Page Two</a></li>
+                                    </ul>
+                                </li>
+                                <li class="current dropdown"><a href="#">Rooms</a>
+                                    <ul>
+                                        <li><a href="room-grid.html">Rooms Grid View</a></li>
+                                        <li><a href="room-list.html">Rooms List View</a></li>
+                                        <li><a href="room-details.html">Room Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li class="dropdown"><a href="#">Pages</a>
+                                    <ul>
+                                        <li><a href="gallery.html">Our Gallery</a></li>
+                                        <li><a href="our-place.html">Our Places</a></li>
+                                        <li><a href="place-details.html">Place Details</a></li>
+                                        <li><a href="service.html">Our Services</a></li>
+                                        <li><a href="resturent.html">Resturent</a></li>
+                                        <li><a href="spa.html">Our Spa</a></li>
+                                        <li><a href="testimonial.html">Testimonials</a></li>
+                                        <li><a href="offer.html">Special Offers</a></li>
+                                        <li><a href="staff.html">Our Staffs</a></li>
+                                        <li><a href="error.html">404 Page</a></li>
+                                    </ul>
+                                </li>  
+                                <li class="dropdown"><a href="#">News</a>
+                                    <ul>
+                                        <li><a href="our-blog.html">Our Blog</a></li>
+                                        <li><a href="blog-details.html">Blog Details</a></li>
+                                    </ul>
+                                </li>                              
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div><!-- sticky-header end -->
+    </header>
+    <!-- End Main Header -->
+
+
+    <!-- page-title -->
+    <section class="page-title centred" style='background-image: url("{% static 'images/background/page-title.jpg' %}");'>
+        <div class="container">
+            <div class="content-box">
+                <div class="title">Room Details</div>
+                <ul class="bread-crumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li>Room Details</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- page-title end -->
+
+
+    <!-- room-details -->
+    <section class="room-details">
+        <div class="container">
+            <div class="row">
+                {% if tour %}
+                <div class="col-lg-8 col-md-12 col-sm-12 column">
+                    <div class="room-details-content">
+                        <div class="contnt-style-one">
+                            <h2>{{ tour.name }}</h2>
+                            <ul class="rating">
+                                <li><i class="fa fa-star-o"></i></li>
+                                <li><i class="fa fa-star-o"></i></li>
+                                <li><i class="fa fa-star-o"></i></li>
+                                <li><i class="fa fa-star-o"></i></li>
+                                <li><i class="fa fa-star-o"></i></li>
+                            </ul>
+                            <div class="single-item-carousel">
+                                {% if images %}
+                                    {% for image in images %}
+                                        <figure class="img-box"><img src="/media/{{ image.image }}" alt=""></figure>
+                                        <!--<figure class="img-box"><img src="{% static 'images/resource/room-details.jpg' %}" alt=""></figure>-->
+                                    {% endfor %}
+                                {% endif %}
+                            </div>
+                            <ul class="img-list clearfix">
+                                <li class="img-box"><figure><img src="{% static 'images/resource/10.png' %}" alt=""></figure></li>
+                                <li class="img-box"><figure><img src="{% static 'images/resource/11.png' %}" alt=""></figure></li>
+                                <li class="img-box"><figure><img src="{% static 'images/resource/12.png' %}" alt=""></figure></li>
+                                <li class="img-box"><figure><img src="{% static 'images/resource/13.png' %}" alt=""></figure></li>
+                                <li class="img-box"><figure><img src="{% static 'images/resource/14.png' %}" alt=""></figure></li>
+                                <li class="img-box"><figure><img src="{% static 'images/resource/15.png' %}" alt=""></figure></li>
+                            </ul>
+                            <div class="text">
+                                <p>{{ tour.description }}</p>
+                                </div>
+                        </div>
+                        <div class="content-style-two">
+                            <h3>Room Amenities</h3>
+                            <div class="text">Exercittion ullamco laboris nisi ut aliquip excepteur.sint occaecat cuidatat non proident sunt in culpa qui officia deserunt.mollit anim id est laborum.</div>
+                            <div class="table-outer">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="icon-box"><i class="flaticon-television"></i></div>
+                                                <div class="table-text">Telivision</div>
+                                            </td>
+                                            <td>
+                                                <div class="icon-box"><i class="flaticon-wifi-connection-signal-symbol"></i></div>
+                                                <div class="table-text">Wifi</div>
+                                            </td>
+                                            <td>
+                                                <div class="icon-box"><i class="flaticon-mug"></i></div>
+                                                <div class="table-text">Breakfast</div>
+                                            </td>
+                                            <td>
+                                                <div class="icon-box"><i class="flaticon-bathtub"></i></div>
+                                                <div class="table-text">Bathtub</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="icon-box"><i class="flaticon-journal"></i></div>
+                                                <div class="table-text">Newspaper</div>
+                                            </td>
+                                            <td>
+                                                <div class="icon-box"><i class="flaticon-spa"></i></div>
+                                                <div class="table-text">Spa</div>
+                                            </td>
+                                            <td>
+                                                <div class="icon-box"><i class="flaticon-cocktail"></i></div>
+                                                <div class="table-text">Mini bar</div>
+                                            </td>
+                                            <td>
+                                                <div class="icon-box"><i class="flaticon-gym"></i></div>
+                                                <div class="table-text">Gymnasium</div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% else %}
+                    <p>Tour no encontrado.</p>
+                {% endif %}
+                <div class="col-lg-4 col-md-6 col-sm-12 column">
+                    <div class="room-sidebar">
+                        <div class="filter-content">
+                            <div class="title"><h3>Book Your Room</h3></div>
+                            <form action="{% url 'iniciar_transaccion' %}" method="POST" class="content">
+                                {% csrf_token %}
+                                <div class="single-item">
+                                    <div class="form-group">
+                                        <label>Email</label>
+                                        <input type="email" name="email" placeholder="Email" required="">
+                                    </div>
+                                </div>
+                                <div class="single-item">
+                                    <div class="form-group">
+                                        <label>Tour date</label>
+                                        <i class="fa fa-angle-down"></i>
+                                        <input type="text" name="date" placeholder="Arrival date" id="datepicker_tour">
+
+                                        <!-- Modal de Bootstrap -->
+                                        <div class="modal fade" id="calendarModal" tabindex="-1" role="dialog" aria-labelledby="calendarModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                <h5 class="modal-title" id="calendarModalLabel">Calendario de Tours</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                <!-- Aquí se insertará el calendario de FullCalendar -->
+                                                <div id="calendar"></div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-item">
+                                    <div class="form-group select-box">
+                                        <label>Guests</label>
+                                        <select class="custom-select-box">
+                                            <option selected="selected">Guests</option>
+                                            <option>Guests Lavel 1</option>
+                                            <option>Guests Lavel 2</option>
+                                            <option>Guests Lavel 3</option>
+                                            <option>Guests Lavel 4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="single-item">
+                                    <div class="form-group">
+                                        <div class="link"><button type="submit" class="theme-btn">Book Now</button></div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="similar-room room-section overlay-style-one">
+                <div class="sec-title left">Similar Rooms</div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="single-item inner-box">
+                            <figure class="image-box">
+                                <img src="{% static 'images/resource/4.jpg' %}" alt="">
+                                <!--Overlay Box-->
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <div class="content">
+                                            <a href="room-details.html" class="link"><i class="icon fa fa-link"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <div class="lower-content">
+                                <div class="price">$150<span>Per Night</span></div>
+                                <ul class="rating">
+                                    <li><i class="fa fa-star-o"></i></li>
+                                    <li><i class="fa fa-star-o"></i></li>
+                                    <li><i class="fa fa-star-o"></i></li>
+                                    <li><i class="fa fa-star-o"></i></li>
+                                    <li><i class="fa fa-star-o"></i></li>
+                                </ul>
+                                <h3><a href="room-details.html">Single Room</a></h3>
+                                <div class="text">Lorem ipsum dolor sit amet constur adip isicing elit sed do eiusmtem por incid.</div>
+                                <ul class="info-box">
+                                    <li class="link"><a href="#" class="theme-btn-three">Book Now</a></li>
+                                    <li><i class="flaticon-television"></i></li>
+                                    <li><i class="flaticon-wifi-connection-signal-symbol"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="single-item inner-box">
+                            <figure class="image-box">
+                                <img src="{% static 'images/resource/5.jpg' %}" alt="">
+                                <!--Overlay Box-->
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <div class="content">
+                                            <a href="room-details.html" class="link"><i class="icon fa fa-link"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <div class="lower-content">
+                                <div class="price">$250<span>Per Night</span></div>
+                                <ul class="rating">
+                                    <li><i class="fa fa-star-o"></i></li>
+                                    <li><i class="fa fa-star-o"></i></li>
+                                    <li><i class="fa fa-star-o"></i></li>
+                                    <li><i class="fa fa-star-o"></i></li>
+                                    <li><i class="fa fa-star-o"></i></li>
+                                </ul>
+                                <h3><a href="room-details.html">Double Room</a></h3>
+                                <div class="text">Lorem ipsum dolor sit amet constur adip isicing elit sed do eiusmtem por incid.</div>
+                                <ul class="info-box">
+                                    <li class="link"><a href="#" class="theme-btn-three">Book Now</a></li>
+                                    <li><i class="flaticon-television"></i></li>
+                                    <li><i class="flaticon-wifi-connection-signal-symbol"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="single-item inner-box">
+                            <figure class="image-box">
+                                <img src="{% static 'images/resource/6.jpg' %}" alt="">
+                                <!--Overlay Box-->
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <div class="content">
+                                            <a href="room-details.html" class="link"><i class="icon fa fa-link"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <div class="lower-content">
+                                <div class="price">$300<span>Per Night</span></div>
+                                <ul class="rating">
+                                    <li><i class="fa fa-star-o"></i></li>
+                                    <li><i class="fa fa-star-o"></i></li>
+                                    <li><i class="fa fa-star-o"></i></li>
+                                    <li><i class="fa fa-star-o"></i></li>
+                                    <li><i class="fa fa-star-o"></i></li>
+                                </ul>
+                                <h3><a href="room-details.html">Delux Room</a></h3>
+                                <div class="text">Lorem ipsum dolor sit amet constur adip isicing elit sed do eiusmtem por incid.</div>
+                                <ul class="info-box">
+                                    <li class="link"><a href="#" class="theme-btn-three">Book Now</a></li>
+                                    <li><i class="flaticon-television"></i></li>
+                                    <li><i class="flaticon-wifi-connection-signal-symbol"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- room-details end -->
+
+
+    <!-- main-footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                    <div class="logo-widget footer-widget">
+                        <figure class="footer-logo"><a href="index.html"><img src="{% static 'images/footer-logo.png' %}" alt=""></a></figure>
+                        <div class="text">
+                            <p>Lorem ipsum dolor amet consecte tur adi pisicing elit sed eiusm tempor incididunt </p>
+                            <p>labore dolore magna aliqua enim ad minim veniam quis.nostrud exercita.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 col-sm-12 big-column">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 footer-column">
+                            <div class="service-widget footer-widget">
+                                <div class="footer-title">Services</div>
+                                <ul class="list">
+                                    <li><a href="#">Business Growth</a></li>
+                                    <li><a href="#">Sustainabilty </a></li>
+                                    <li><a href="#">Customer Insights</a></li>
+                                    <li><a href="#">Advenced Analytics</a></li>
+                                    <li><a href="#">Performance</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 footer-widget">
+                            <div class="contact-widget footer-widget">
+                                <div class="footer-title">Contact Info</div>
+                                <div class="text">Flat 20, Reynolds Neck, North Helenaville, FV77</div>
+                                <div class="phone">+2(305) 587-3407</div>
+                                <div class="mail">info@panola.com</div>
+                                <ul class="footer-social">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
+                    <div class="newsletter-widget footer-widget">
+                        <div class="footer-title">Newsletter</div>
+                        <div class="text">Eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                        <div class="subscribe-form">
+                            <form action="#" method="post">
+                                <div class="form-group">
+                                    <input type="email" name="email" placeholder="Email" required="">
+                                    <button type="submit">Subscribe</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- main-footer end -->
+
+
+    <!-- footer-bottom -->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 column">
+                    <div class="copyright"><a href="#">Panola</a> © 2018 All Right Reserved</div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 column">
+                    <ul class="footer-nav">
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer-bottome end -->
+
+
+
+<!--Scroll to top-->
+<button class="scroll-top scroll-to-target" data-target="html">
+    <span class="fa fa-long-arrow-up"></span>
+</button>
+
+
+
+<!--jquery js -->
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/bootstrap.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/wow.js' %}"></script>
+<script src="{% static 'js/validation.js' %}"></script>
+<script src="{% static 'js/jquery.fancybox.pack.js' %}"></script>
+<script type="text/javascript" src="js/SmoothScroll.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZQiiFTOGpm2qHVZmZY1s-aEnmHDhqKgk"></script>
+<script src="{% static 'js/html5lightbox/html5lightbox.js' %}"></script>
+<script src="{% static 'js/gmaps.js' %}"></script>
+<script src="{% static 'js/map-helper.js' %}"></script>
+<script src="{% static 'js/isotope.js' %}"></script>
+<script src="{% static 'js/jquery-ui.js' %}"></script>
+<!-- main-js -->
+<script src="{% static 'js/script.js' %}"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- FullCalendar JS -->
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js"></script>
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        var selectedDate = null;  // Variable para almacenar la fecha seleccionada
+
+        // Cuando se hace clic en el campo #datepicker_tour, se abre el modal
+        $('#datepicker_tour').click(function() {
+            $('#calendarModal').modal('show');
+        });
+
+        $('#calendarModal').on('shown.bs.modal', function () {
+            // Obtener la fecha seleccionada previamente del input #datepicker_tour, si existe
+            selectedDate = $('#datepicker_tour').val() || null;
+
+            var calendarEl = document.getElementById('calendar');
+        
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',  // Vista del calendario
+                headerToolbar: {
+                    left: 'prev,next',
+                    center: 'title',
+                    right: ''
+                },
+                events: function(fetchInfo, successCallback, failureCallback) {
+                    // Llamada AJAX para obtener los datos de tours y holidays
+                    $.ajax({
+                        url: '/get-tour-data/',  // Cambia a tu URL
+                        method: 'GET',
+                        success: function(response) {
+                            var events = [];
+                            var tourData = response.tour_data;
+                            var holidays = response.holidays;
+
+                            // Agregar días feriados
+                            holidays.forEach(function(date) {
+                                events.push({
+                                    title: 'Feriado',
+                                    start: date,
+                                    color: '#ffeb3b',  // Amarillo para feriados
+                                    textColor: '#000',
+                                    allDay: true
+                                });
+                            });
+
+                            // Agregar días con tours y cupos disponibles
+                            for (var date in tourData) {
+                                var spots = tourData[date];
+                                events.push({
+                                    title: spots > 0 ? `Cupos: ${spots}` : 'Sin cupos',
+                                    start: date,
+                                    color: spots > 0 ? '#8bc34a' : '#f44336',  // Verde si hay cupos, rojo si no
+                                    textColor: '#fff',
+                                    allDay: true,
+                                    extendedProps: {
+                                        spots: spots
+                                    }
+                                });
+                            }
+
+                            // Si hay una fecha seleccionada, agregar un evento especial para resaltarla
+                            if (selectedDate) {
+                                events.push({
+                                    title: 'Día Seleccionado',
+                                    start: selectedDate,
+                                    color: '#007bff',  // Azul para la fecha seleccionada
+                                    textColor: '#fff',
+                                    allDay: true
+                                });
+                            }
+
+                            successCallback(events);  // Pasar los eventos a FullCalendar
+                        },
+                        error: function() {
+                            failureCallback();  // Manejo de error
+                        }
+                    });
+                },
+                eventClick: function(info) {
+                    if (info.event.extendedProps.spots > 0) {  // Solo permitir la selección si hay cupos
+                        var selectedDate = info.event.start.toISOString().split('T')[0];  // Formato YYYY-MM-DD
+                        $('#datepicker_tour').val(selectedDate);  // Insertar la fecha en el input
+                        $('#calendarModal').modal('hide');  // Cerrar el modal
+                    } else {
+                        alert('No hay cupos disponibles para esta fecha.');
+                    }
+                },
+                
+            });
+
+            calendar.render();  // Renderizar el calendario
+
+            // Si hay una fecha seleccionada previamente, navegar a ese mes
+            if (selectedDate) {
+                var date = new Date(selectedDate);
+                calendar.gotoDate(date);  // Posicionar el calendario en el mes de la fecha seleccionada
+            }
+        });
+
+        // Limpiar el calendario cuando se cierra el modal para evitar duplicados
+        $('#calendarModal').on('hidden.bs.modal', function () {
+            $('#calendar').html('');  // Vaciar el contenido del calendario
+        });
+    });
+
+
+</script>
+
+</body><!-- End of .page_wrapper -->
+</html>

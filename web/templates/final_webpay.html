@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalización de la Transacción</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>¡Transacción Completa!</h1>
+        <p>Hemos recibido tu pago y la transacción ha sido finalizada exitosamente.</p>
+        <p>Te hemos enviado un correo electrónico con los detalles de tu reserva.</p>
+        <a href="{% url 'home' %}" class="btn btn-primary">Volver al Inicio</a>
+    </div>
+</body>
+</html>

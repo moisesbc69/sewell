@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transacción Exitosa</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>¡Pago Exitoso!</h1>
+        <p>Tu transacción ha sido procesada exitosamente.</p>
+        <ul>
+            <li><strong>Orden de Compra:</strong> {{ response.buy_order }}</li>
+            <li><strong>Estado:</strong> {{ response.status }}</li>
+            <li><strong>Monto Pagado:</strong> ${{ response.amount }}</li>
+            <li><strong>Código de Autorización:</strong> {{ response.authorization_code }}</li>
+        </ul>
+        <a href="{% url 'home' %}" class="btn btn-primary">Volver al Inicio</a>
+    </div>
+</body>
+</html>
